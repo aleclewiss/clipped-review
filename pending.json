@@ -126,20 +126,6 @@
   "queued_at": "2026-09-03T14:05:12"
  },
  {
-  "id": "tw_4263449746",
-  "streamer_key": "stableronaldo",
-  "streamer": "stableronaldo",
-  "platform": "twitch",
-  "title": "duke \"who is you\" \ud83d\ude2d\ud83d\ude2d",
-  "views": 167459,
-  "duration": 60.0,
-  "source_url": "https://www.twitch.tv/stableronaldo/clip/YawningRacyCrocodileHeyGuys-a85AO8ole8XkAmv6",
-  "file": "tw_4263449746.mp4",
-  "preview": "tw_4263449746.preview.mp4",
-  "bytes": 44013735,
-  "queued_at": "2026-09-03T14:38:01"
- },
- {
   "id": "tw_4132010638",
   "streamer_key": "lacy",
   "streamer": "Lacy",
