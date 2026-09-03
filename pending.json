@@ -252,20 +252,6 @@
   "queued_at": "2026-09-03T14:31:15"
  },
  {
-  "id": "tw_863427391",
-  "streamer_key": "adapt",
-  "streamer": "Adapt",
-  "platform": "twitch",
-  "title": "ayooo??????",
-  "views": 78713,
-  "duration": 6.0,
-  "source_url": "https://www.twitch.tv/adapt/clip/SourHappyGoblinSoBayed-NRM35HrEGCc6o1JC",
-  "file": "tw_863427391.mp4",
-  "preview": "tw_863427391.preview.mp4",
-  "bytes": 2666836,
-  "queued_at": "2026-09-03T14:21:18"
- },
- {
   "id": "tw_3922565272",
   "streamer_key": "lacy",
   "streamer": "Lacy",
