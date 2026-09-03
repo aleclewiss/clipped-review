@@ -41,6 +41,12 @@
   .chip:active { background:rgba(242,231,209,.22); }
   .btns button { flex:1; padding:11px 0; border:0; border-radius:9px;
                   font:700 15px inherit; color:#fff; cursor:pointer; }
+  .more { display:flex; gap:8px; margin-top:11px; }
+  .get { flex:1; padding:11px 0; border-radius:9px; cursor:pointer;
+          background:var(--cream); color:var(--brown); border:0;
+          font:700 15px inherit; }
+  .get.alt { flex:0 0 74px; background:transparent; color:var(--cream);
+              border:1px solid rgba(242,231,209,.35); }
 </style></head><body>
 <script>
   const REPO = "aleclewiss/clipped-review";
@@ -49,6 +55,14 @@
     const t = "#" + tag;
     if (ta.value.includes(t)) return;               // one tap adds, not duplicates
     ta.value = (ta.value.trimEnd() + " " + t).trim();
+  }
+  function getMore(n) {
+    // Same road as a verdict: the page is static, so a request to render more
+    // clips travels as a GitHub issue the PC polls.
+    const url = "https://github.com/" + REPO + "/issues/new"
+      + "?title=" + encodeURIComponent("batch: " + n)
+      + "&body=" + encodeURIComponent("Submit to render " + n + " more clips.");
+    window.open(url, "_blank", "noopener");
   }
   function send(id, verdict) {
     const ta = document.getElementById("c_" + id);
@@ -64,7 +78,11 @@
 </script>
 <header>
   <h1>Clipped House &mdash; review</h1>
-  <div class="count">26 waiting &middot; updated Sep 03 16:27</div>
+  <div class="count">26 waiting &middot; updated Sep 03 16:28</div>
+  <div class="more">
+    <button class="get" onclick="getMore(20)">Get 20 more clips</button>
+    <button class="get alt" onclick="getMore(40)">40</button>
+  </div>
 </header>
 <div class="grid">
 <section class="card" id="tw_2812382116">
