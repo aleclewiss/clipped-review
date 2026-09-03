@@ -384,38 +384,6 @@
   "queued_at": "2026-09-03T15:59:19"
  },
  {
-  "id": "tw_535124260",
-  "streamer_key": "adapt",
-  "streamer": "Adapt",
-  "platform": "twitch",
-  "title": "ONE HANDED BACKWARDS TRICKSHOT",
-  "views": 16066,
-  "duration": 15.0,
-  "created_at": 1781063615,
-  "age_days": 85.7,
-  "source_url": "https://www.twitch.tv/adapt/clip/ManlyShortDiscPartyTime-UnmeLCNTbwv99cTA",
-  "file": "tw_535124260.mp4",
-  "preview": "tw_535124260.preview.mp4",
-  "bytes": 8501173,
-  "queued_at": "2026-09-03T16:02:46"
- },
- {
-  "id": "tw_3889777661",
-  "streamer_key": "adapt",
-  "streamer": "Adapt",
-  "platform": "twitch",
-  "title": "OH MY GOD",
-  "views": 11968,
-  "duration": 59.0,
-  "created_at": 1787684237,
-  "age_days": 9.0,
-  "source_url": "https://www.twitch.tv/adapt/clip/SuaveCrispyClamPlanking-ewF2yihcmoEkYKIw",
-  "file": "tw_3889777661.mp4",
-  "preview": "tw_3889777661.preview.mp4",
-  "bytes": 35233762,
-  "queued_at": "2026-09-03T16:05:41"
- },
- {
   "id": "kck_clip_01KG7H3JKWPT9RPXYW9WBG3DYF",
   "streamer_key": "lospollostv",
   "streamer": "LosPollosTV",
