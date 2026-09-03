@@ -58,22 +58,6 @@
   "queued_at": "2026-09-03T15:52:24"
  },
  {
-  "id": "tw_1757041130",
-  "streamer_key": "stableronaldo",
-  "streamer": "stableronaldo",
-  "platform": "twitch",
-  "title": "kai beats up and rips clothes\ud83d\udc80\ud83d\ude2d",
-  "views": 103828,
-  "duration": 30.0,
-  "created_at": 1784180417,
-  "age_days": 49.6,
-  "source_url": "https://www.twitch.tv/stableronaldo/clip/ClumsyDarkPassionfruitBCouch-IAtE_BZ87kE7PQSG",
-  "file": "tw_1757041130.mp4",
-  "preview": "tw_1757041130.preview.mp4",
-  "bytes": 16965590,
-  "queued_at": "2026-09-03T15:55:28"
- },
- {
   "id": "tw_1949143774",
   "streamer_key": "jynxzi",
   "streamer": "Jynxzi",
@@ -176,6 +160,22 @@
   "preview": "tw_1348674688.preview.mp4",
   "bytes": 14561210,
   "queued_at": "2026-09-03T14:40:29"
+ },
+ {
+  "id": "tw_3884124137",
+  "streamer_key": "lacy",
+  "streamer": "Lacy",
+  "platform": "twitch",
+  "title": "poor lacy",
+  "views": 44032,
+  "duration": 42.0,
+  "created_at": 1784440421,
+  "age_days": 46.6,
+  "source_url": "https://www.twitch.tv/lacy/clip/ZanyGlamorousBorkDxAbomb-eMDS8rOWRvGXDB-n",
+  "file": "tw_3884124137.mp4",
+  "preview": "tw_3884124137.preview.mp4",
+  "bytes": 26636487,
+  "queued_at": "2026-09-03T15:56:46"
  },
  {
   "id": "kck_clip_01K4W4J3Y2XF2DPRGPWTE2Z2WD",
