@@ -398,37 +398,5 @@
   "preview": "kck_clip_01KG7H3JKWPT9RPXYW9WBG3DYF.preview.mp4",
   "bytes": 5862928,
   "queued_at": "2026-09-03T16:00:17"
- },
- {
-  "id": "tw_2381739969",
-  "streamer_key": "lospollostv",
-  "streamer": "LosPollosTV",
-  "platform": "twitch",
-  "title": "??",
-  "views": 6930,
-  "duration": 20.0,
-  "created_at": 1781571430,
-  "age_days": 79.8,
-  "source_url": "https://www.twitch.tv/lospollostv/clip/SneakyCuteMushroomBrokeBack-CkC9KmS-SWw2RJvg",
-  "file": "tw_2381739969.mp4",
-  "preview": "tw_2381739969.preview.mp4",
-  "bytes": 10440680,
-  "queued_at": "2026-09-03T15:58:06"
- },
- {
-  "id": "tw_620952781",
-  "streamer_key": "lospollostv",
-  "streamer": "LosPollosTV",
-  "platform": "twitch",
-  "title": "los crashout",
-  "views": 4874,
-  "duration": 38.0,
-  "created_at": 1781554485,
-  "age_days": 80.0,
-  "source_url": "https://www.twitch.tv/lospollostv/clip/BloodyBelovedWrenKappaRoss-tFTFWjL8q8N0Pjwl",
-  "file": "tw_620952781.mp4",
-  "preview": "tw_620952781.preview.mp4",
-  "bytes": 6604921,
-  "queued_at": "2026-09-03T16:03:40"
  }
 ]
