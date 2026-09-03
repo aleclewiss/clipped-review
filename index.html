@@ -30,10 +30,41 @@
   .no { background:var(--no); }
   footer { padding:22px 16px 40px; opacity:.55; font-size:12px; }
   .empty { padding:40px 16px; opacity:.7; }
+  .cap { width:100%; margin-top:10px; padding:9px 10px; border-radius:9px;
+          background:rgba(0,0,0,.30); color:var(--cream);
+          border:1px solid rgba(242,231,209,.22); font:14px/1.4 inherit;
+          resize:vertical; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+  .chip { background:rgba(242,231,209,.10); color:var(--cream); cursor:pointer;
+           border:1px solid rgba(242,231,209,.22); border-radius:999px;
+           padding:5px 10px; font:12px inherit; }
+  .chip:active { background:rgba(242,231,209,.22); }
+  .btns button { flex:1; padding:11px 0; border:0; border-radius:9px;
+                  font:700 15px inherit; color:#fff; cursor:pointer; }
 </style></head><body>
+<script>
+  const REPO = "aleclewiss/clipped-review";
+  function addTag(id, tag) {
+    const ta = document.getElementById("c_" + id);
+    const t = "#" + tag;
+    if (ta.value.includes(t)) return;               // one tap adds, not duplicates
+    ta.value = (ta.value.trimEnd() + " " + t).trim();
+  }
+  function send(id, verdict) {
+    const ta = document.getElementById("c_" + id);
+    // The caption rides in the issue BODY. Nothing else on this page can talk
+    // to the PC, and this needs no credential to work.
+    const url = "https://github.com/" + REPO + "/issues/new"
+      + "?title=" + encodeURIComponent(verdict + ": " + id)
+      + "&body=" + encodeURIComponent(verdict === "approve" ? ta.value : "");
+    window.open(url, "_blank", "noopener");
+    const card = document.getElementById(id);
+    if (card) { card.style.opacity = .35; }       // visual "done", page reloads later
+  }
+</script>
 <header>
   <h1>Clipped House &mdash; review</h1>
-  <div class="count">8 waiting &middot; updated Sep 03 14:08</div>
+  <div class="count">16 waiting &middot; updated Sep 03 14:15</div>
 </header>
 <div class="grid">
 <section class="card" id="tw_1781766988">
@@ -44,9 +75,12 @@
       <span class="plat">twitch</span></div>
     <div class="t">nahh</div>
     <div class="sub">17,754,003 views &middot; 22s</div>
+    <textarea id="c_tw_1781766988" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">#stableronaldo #nopixel #gta #clips #twitch #kick #streamer</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_1781766988&quot;,&quot;stableronaldo&quot;)">#stableronaldo</button><button class="chip" onclick="addTag(&quot;tw_1781766988&quot;,&quot;nopixel&quot;)">#nopixel</button><button class="chip" onclick="addTag(&quot;tw_1781766988&quot;,&quot;gta&quot;)">#gta</button><button class="chip" onclick="addTag(&quot;tw_1781766988&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_1781766988&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_1781766988&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_1781766988&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_1781766988&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_1781766988&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_1781766988&quot;,&quot;funny&quot;)">#funny</button></div>
     <div class="btns">
-      <a class="ok" href="https://github.com/aleclewiss/clipped-review/issues/new?title=approve%3A%20tw_1781766988&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Approve</a>
-      <a class="no" href="https://github.com/aleclewiss/clipped-review/issues/new?title=reject%3A%20tw_1781766988&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Reject</a>
+      <button class="ok" onclick="send('tw_1781766988','approve')">Approve</button>
+      <button class="no" onclick="send('tw_1781766988','reject')">Reject</button>
     </div>
   </div>
 </section>
@@ -58,9 +92,14 @@
       <span class="plat">twitch</span></div>
     <div class="t">kiss on the lips</div>
     <div class="sub">2,289,103 views &middot; 18s</div>
+    <textarea id="c_tw_2708583641" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">kiss on the lips
+
+#jynxzi #rainbowsixsiege #r6 #clips #twitch #kick #streamer</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_2708583641&quot;,&quot;jynxzi&quot;)">#jynxzi</button><button class="chip" onclick="addTag(&quot;tw_2708583641&quot;,&quot;rainbowsixsiege&quot;)">#rainbowsixsiege</button><button class="chip" onclick="addTag(&quot;tw_2708583641&quot;,&quot;r6&quot;)">#r6</button><button class="chip" onclick="addTag(&quot;tw_2708583641&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_2708583641&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_2708583641&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_2708583641&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_2708583641&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_2708583641&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_2708583641&quot;,&quot;funny&quot;)">#funny</button></div>
     <div class="btns">
-      <a class="ok" href="https://github.com/aleclewiss/clipped-review/issues/new?title=approve%3A%20tw_2708583641&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Approve</a>
-      <a class="no" href="https://github.com/aleclewiss/clipped-review/issues/new?title=reject%3A%20tw_2708583641&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Reject</a>
+      <button class="ok" onclick="send('tw_2708583641','approve')">Approve</button>
+      <button class="no" onclick="send('tw_2708583641','reject')">Reject</button>
     </div>
   </div>
 </section>
@@ -72,9 +111,50 @@
       <span class="plat">twitch</span></div>
     <div class="t">Jynxzi Charm</div>
     <div class="sub">1,976,515 views &middot; 28s</div>
+    <textarea id="c_tw_713809148" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">Jynxzi Charm
+
+#jynxzi #rainbowsixsiege #r6 #clips #twitch #kick #streamer</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_713809148&quot;,&quot;jynxzi&quot;)">#jynxzi</button><button class="chip" onclick="addTag(&quot;tw_713809148&quot;,&quot;rainbowsixsiege&quot;)">#rainbowsixsiege</button><button class="chip" onclick="addTag(&quot;tw_713809148&quot;,&quot;r6&quot;)">#r6</button><button class="chip" onclick="addTag(&quot;tw_713809148&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_713809148&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_713809148&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_713809148&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_713809148&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_713809148&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_713809148&quot;,&quot;funny&quot;)">#funny</button></div>
     <div class="btns">
-      <a class="ok" href="https://github.com/aleclewiss/clipped-review/issues/new?title=approve%3A%20tw_713809148&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Approve</a>
-      <a class="no" href="https://github.com/aleclewiss/clipped-review/issues/new?title=reject%3A%20tw_713809148&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Reject</a>
+      <button class="ok" onclick="send('tw_713809148','approve')">Approve</button>
+      <button class="no" onclick="send('tw_713809148','reject')">Reject</button>
+    </div>
+  </div>
+</section>
+<section class="card" id="tw_3465292237">
+  <video src="clips/tw_3465292237.preview.mp4" controls preload="none"
+         playsinline poster=""></video>
+  <div class="meta">
+    <div class="who">Jynxzi
+      <span class="plat">twitch</span></div>
+    <div class="t">Humiliation Ritual</div>
+    <div class="sub">1,189,450 views &middot; 19s</div>
+    <textarea id="c_tw_3465292237" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">Humiliation Ritual
+
+#jynxzi #rainbowsixsiege #r6 #clips #twitch #kick #streamer</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_3465292237&quot;,&quot;jynxzi&quot;)">#jynxzi</button><button class="chip" onclick="addTag(&quot;tw_3465292237&quot;,&quot;rainbowsixsiege&quot;)">#rainbowsixsiege</button><button class="chip" onclick="addTag(&quot;tw_3465292237&quot;,&quot;r6&quot;)">#r6</button><button class="chip" onclick="addTag(&quot;tw_3465292237&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_3465292237&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_3465292237&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_3465292237&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_3465292237&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_3465292237&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_3465292237&quot;,&quot;funny&quot;)">#funny</button></div>
+    <div class="btns">
+      <button class="ok" onclick="send('tw_3465292237','approve')">Approve</button>
+      <button class="no" onclick="send('tw_3465292237','reject')">Reject</button>
+    </div>
+  </div>
+</section>
+<section class="card" id="tw_1330804442">
+  <video src="clips/tw_1330804442.preview.mp4" controls preload="none"
+         playsinline poster=""></video>
+  <div class="meta">
+    <div class="who">stableronaldo
+      <span class="plat">twitch</span></div>
+    <div class="t">hey!</div>
+    <div class="sub">348,427 views &middot; 47s</div>
+    <textarea id="c_tw_1330804442" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">#stableronaldo #nopixel #gta #clips #twitch #kick #streamer</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_1330804442&quot;,&quot;stableronaldo&quot;)">#stableronaldo</button><button class="chip" onclick="addTag(&quot;tw_1330804442&quot;,&quot;nopixel&quot;)">#nopixel</button><button class="chip" onclick="addTag(&quot;tw_1330804442&quot;,&quot;gta&quot;)">#gta</button><button class="chip" onclick="addTag(&quot;tw_1330804442&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_1330804442&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_1330804442&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_1330804442&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_1330804442&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_1330804442&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_1330804442&quot;,&quot;funny&quot;)">#funny</button></div>
+    <div class="btns">
+      <button class="ok" onclick="send('tw_1330804442','approve')">Approve</button>
+      <button class="no" onclick="send('tw_1330804442','reject')">Reject</button>
     </div>
   </div>
 </section>
@@ -86,9 +166,50 @@
       <span class="plat">twitch</span></div>
     <div class="t">wild</div>
     <div class="sub">326,286 views &middot; 5s</div>
+    <textarea id="c_tw_2227315338" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">#lacy #lacylive #clips #twitch #kick #streamer #fyp</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_2227315338&quot;,&quot;lacy&quot;)">#lacy</button><button class="chip" onclick="addTag(&quot;tw_2227315338&quot;,&quot;lacylive&quot;)">#lacylive</button><button class="chip" onclick="addTag(&quot;tw_2227315338&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_2227315338&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_2227315338&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_2227315338&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_2227315338&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_2227315338&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_2227315338&quot;,&quot;funny&quot;)">#funny</button></div>
     <div class="btns">
-      <a class="ok" href="https://github.com/aleclewiss/clipped-review/issues/new?title=approve%3A%20tw_2227315338&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Approve</a>
-      <a class="no" href="https://github.com/aleclewiss/clipped-review/issues/new?title=reject%3A%20tw_2227315338&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Reject</a>
+      <button class="ok" onclick="send('tw_2227315338','approve')">Approve</button>
+      <button class="no" onclick="send('tw_2227315338','reject')">Reject</button>
+    </div>
+  </div>
+</section>
+<section class="card" id="tw_1070368286">
+  <video src="clips/tw_1070368286.preview.mp4" controls preload="none"
+         playsinline poster=""></video>
+  <div class="meta">
+    <div class="who">stableronaldo
+      <span class="plat">twitch</span></div>
+    <div class="t">&quot;IGHT BET&quot; - Max</div>
+    <div class="sub">317,636 views &middot; 9s</div>
+    <textarea id="c_tw_1070368286" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">&quot;IGHT BET&quot; - Max
+
+#stableronaldo #nopixel #gta #clips #twitch #kick #streamer</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_1070368286&quot;,&quot;stableronaldo&quot;)">#stableronaldo</button><button class="chip" onclick="addTag(&quot;tw_1070368286&quot;,&quot;nopixel&quot;)">#nopixel</button><button class="chip" onclick="addTag(&quot;tw_1070368286&quot;,&quot;gta&quot;)">#gta</button><button class="chip" onclick="addTag(&quot;tw_1070368286&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_1070368286&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_1070368286&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_1070368286&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_1070368286&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_1070368286&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_1070368286&quot;,&quot;funny&quot;)">#funny</button></div>
+    <div class="btns">
+      <button class="ok" onclick="send('tw_1070368286','approve')">Approve</button>
+      <button class="no" onclick="send('tw_1070368286','reject')">Reject</button>
+    </div>
+  </div>
+</section>
+<section class="card" id="tw_2854710560">
+  <video src="clips/tw_2854710560.preview.mp4" controls preload="none"
+         playsinline poster=""></video>
+  <div class="meta">
+    <div class="who">Lacy
+      <span class="plat">twitch</span></div>
+    <div class="t">CLEAN THIS</div>
+    <div class="sub">171,326 views &middot; 19s</div>
+    <textarea id="c_tw_2854710560" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">CLEAN THIS
+
+#lacy #lacylive #clips #twitch #kick #streamer #fyp</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_2854710560&quot;,&quot;lacy&quot;)">#lacy</button><button class="chip" onclick="addTag(&quot;tw_2854710560&quot;,&quot;lacylive&quot;)">#lacylive</button><button class="chip" onclick="addTag(&quot;tw_2854710560&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_2854710560&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_2854710560&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_2854710560&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_2854710560&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_2854710560&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_2854710560&quot;,&quot;funny&quot;)">#funny</button></div>
+    <div class="btns">
+      <button class="ok" onclick="send('tw_2854710560','approve')">Approve</button>
+      <button class="no" onclick="send('tw_2854710560','reject')">Reject</button>
     </div>
   </div>
 </section>
@@ -100,9 +221,12 @@
       <span class="plat">twitch</span></div>
     <div class="t">.</div>
     <div class="sub">167,825 views &middot; 58s</div>
+    <textarea id="c_tw_157752550" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">#lospollostv #lospollos #clips #twitch #kick #streamer #fyp</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_157752550&quot;,&quot;lospollostv&quot;)">#lospollostv</button><button class="chip" onclick="addTag(&quot;tw_157752550&quot;,&quot;lospollos&quot;)">#lospollos</button><button class="chip" onclick="addTag(&quot;tw_157752550&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_157752550&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_157752550&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_157752550&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_157752550&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_157752550&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_157752550&quot;,&quot;funny&quot;)">#funny</button></div>
     <div class="btns">
-      <a class="ok" href="https://github.com/aleclewiss/clipped-review/issues/new?title=approve%3A%20tw_157752550&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Approve</a>
-      <a class="no" href="https://github.com/aleclewiss/clipped-review/issues/new?title=reject%3A%20tw_157752550&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Reject</a>
+      <button class="ok" onclick="send('tw_157752550','approve')">Approve</button>
+      <button class="no" onclick="send('tw_157752550','reject')">Reject</button>
     </div>
   </div>
 </section>
@@ -114,9 +238,14 @@
       <span class="plat">twitch</span></div>
     <div class="t">Road to $10,000 - GAMBLING STREAM</div>
     <div class="sub">157,007 views &middot; 29s</div>
+    <textarea id="c_tw_1885880472" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">Road to $10,000 - GAMBLING STREAM
+
+#lospollostv #lospollos #clips #twitch #kick #streamer #fyp</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_1885880472&quot;,&quot;lospollostv&quot;)">#lospollostv</button><button class="chip" onclick="addTag(&quot;tw_1885880472&quot;,&quot;lospollos&quot;)">#lospollos</button><button class="chip" onclick="addTag(&quot;tw_1885880472&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_1885880472&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_1885880472&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_1885880472&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_1885880472&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_1885880472&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_1885880472&quot;,&quot;funny&quot;)">#funny</button></div>
     <div class="btns">
-      <a class="ok" href="https://github.com/aleclewiss/clipped-review/issues/new?title=approve%3A%20tw_1885880472&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Approve</a>
-      <a class="no" href="https://github.com/aleclewiss/clipped-review/issues/new?title=reject%3A%20tw_1885880472&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Reject</a>
+      <button class="ok" onclick="send('tw_1885880472','approve')">Approve</button>
+      <button class="no" onclick="send('tw_1885880472','reject')">Reject</button>
     </div>
   </div>
 </section>
@@ -128,9 +257,48 @@
       <span class="plat">twitch</span></div>
     <div class="t">kobe</div>
     <div class="sub">152,884 views &middot; 60s</div>
+    <textarea id="c_tw_360201616" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">#adapt #fazeadapt #faze #clips #twitch #kick #streamer</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_360201616&quot;,&quot;adapt&quot;)">#adapt</button><button class="chip" onclick="addTag(&quot;tw_360201616&quot;,&quot;fazeadapt&quot;)">#fazeadapt</button><button class="chip" onclick="addTag(&quot;tw_360201616&quot;,&quot;faze&quot;)">#faze</button><button class="chip" onclick="addTag(&quot;tw_360201616&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_360201616&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_360201616&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_360201616&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_360201616&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_360201616&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_360201616&quot;,&quot;funny&quot;)">#funny</button></div>
     <div class="btns">
-      <a class="ok" href="https://github.com/aleclewiss/clipped-review/issues/new?title=approve%3A%20tw_360201616&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Approve</a>
-      <a class="no" href="https://github.com/aleclewiss/clipped-review/issues/new?title=reject%3A%20tw_360201616&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Reject</a>
+      <button class="ok" onclick="send('tw_360201616','approve')">Approve</button>
+      <button class="no" onclick="send('tw_360201616','reject')">Reject</button>
+    </div>
+  </div>
+</section>
+<section class="card" id="tw_4132010638">
+  <video src="clips/tw_4132010638.preview.mp4" controls preload="none"
+         playsinline poster=""></video>
+  <div class="meta">
+    <div class="who">Lacy
+      <span class="plat">twitch</span></div>
+    <div class="t">Lacy texting and driving without seatbelt driving Adapts E-wagon after he stole it</div>
+    <div class="sub">146,825 views &middot; 30s</div>
+    <textarea id="c_tw_4132010638" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">Lacy texting and driving without seatbelt driving Adapts E-wagon after he stole it
+
+#lacy #lacylive #clips #twitch #kick #streamer #fyp</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_4132010638&quot;,&quot;lacy&quot;)">#lacy</button><button class="chip" onclick="addTag(&quot;tw_4132010638&quot;,&quot;lacylive&quot;)">#lacylive</button><button class="chip" onclick="addTag(&quot;tw_4132010638&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_4132010638&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_4132010638&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_4132010638&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_4132010638&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_4132010638&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_4132010638&quot;,&quot;funny&quot;)">#funny</button></div>
+    <div class="btns">
+      <button class="ok" onclick="send('tw_4132010638','approve')">Approve</button>
+      <button class="no" onclick="send('tw_4132010638','reject')">Reject</button>
+    </div>
+  </div>
+</section>
+<section class="card" id="kck_clip_01HFTBNC9G77NBJRYPG30PG1S6">
+  <video src="clips/kck_clip_01HFTBNC9G77NBJRYPG30PG1S6.preview.mp4" controls preload="none"
+         playsinline poster=""></video>
+  <div class="meta">
+    <div class="who">LosPollosTV
+      <span class="plat">kick</span></div>
+    <div class="t">3M</div>
+    <div class="sub">144,659 views &middot; 30s</div>
+    <textarea id="c_kck_clip_01HFTBNC9G77NBJRYPG30PG1S6" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">#lospollostv #lospollos #clips #twitch #kick #streamer #fyp</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;kck_clip_01HFTBNC9G77NBJRYPG30PG1S6&quot;,&quot;lospollostv&quot;)">#lospollostv</button><button class="chip" onclick="addTag(&quot;kck_clip_01HFTBNC9G77NBJRYPG30PG1S6&quot;,&quot;lospollos&quot;)">#lospollos</button><button class="chip" onclick="addTag(&quot;kck_clip_01HFTBNC9G77NBJRYPG30PG1S6&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;kck_clip_01HFTBNC9G77NBJRYPG30PG1S6&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;kck_clip_01HFTBNC9G77NBJRYPG30PG1S6&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;kck_clip_01HFTBNC9G77NBJRYPG30PG1S6&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;kck_clip_01HFTBNC9G77NBJRYPG30PG1S6&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;kck_clip_01HFTBNC9G77NBJRYPG30PG1S6&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;kck_clip_01HFTBNC9G77NBJRYPG30PG1S6&quot;,&quot;funny&quot;)">#funny</button></div>
+    <div class="btns">
+      <button class="ok" onclick="send('kck_clip_01HFTBNC9G77NBJRYPG30PG1S6','approve')">Approve</button>
+      <button class="no" onclick="send('kck_clip_01HFTBNC9G77NBJRYPG30PG1S6','reject')">Reject</button>
     </div>
   </div>
 </section>
@@ -142,9 +310,50 @@
       <span class="plat">twitch</span></div>
     <div class="t">spike</div>
     <div class="sub">129,800 views &middot; 8s</div>
+    <textarea id="c_tw_3904423897" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">#adapt #fazeadapt #faze #clips #twitch #kick #streamer</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_3904423897&quot;,&quot;adapt&quot;)">#adapt</button><button class="chip" onclick="addTag(&quot;tw_3904423897&quot;,&quot;fazeadapt&quot;)">#fazeadapt</button><button class="chip" onclick="addTag(&quot;tw_3904423897&quot;,&quot;faze&quot;)">#faze</button><button class="chip" onclick="addTag(&quot;tw_3904423897&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_3904423897&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_3904423897&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_3904423897&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_3904423897&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_3904423897&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_3904423897&quot;,&quot;funny&quot;)">#funny</button></div>
     <div class="btns">
-      <a class="ok" href="https://github.com/aleclewiss/clipped-review/issues/new?title=approve%3A%20tw_3904423897&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Approve</a>
-      <a class="no" href="https://github.com/aleclewiss/clipped-review/issues/new?title=reject%3A%20tw_3904423897&body=Submit%20this%20issue%20to%20record%20your%20decision.%20This%20PC%20picks%20it%20up%20within%20a%20minute%20and%20closes%20it." target="_blank" rel="noopener">Reject</a>
+      <button class="ok" onclick="send('tw_3904423897','approve')">Approve</button>
+      <button class="no" onclick="send('tw_3904423897','reject')">Reject</button>
+    </div>
+  </div>
+</section>
+<section class="card" id="tw_2666420006">
+  <video src="clips/tw_2666420006.preview.mp4" controls preload="none"
+         playsinline poster=""></video>
+  <div class="meta">
+    <div class="who">Adapt
+      <span class="plat">twitch</span></div>
+    <div class="t">Trying to steal the speaker until they found out he was live</div>
+    <div class="sub">107,361 views &middot; 41s</div>
+    <textarea id="c_tw_2666420006" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">Trying to steal the speaker until they found out he was live
+
+#adapt #fazeadapt #faze #clips #twitch #kick #streamer</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_2666420006&quot;,&quot;adapt&quot;)">#adapt</button><button class="chip" onclick="addTag(&quot;tw_2666420006&quot;,&quot;fazeadapt&quot;)">#fazeadapt</button><button class="chip" onclick="addTag(&quot;tw_2666420006&quot;,&quot;faze&quot;)">#faze</button><button class="chip" onclick="addTag(&quot;tw_2666420006&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_2666420006&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_2666420006&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_2666420006&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_2666420006&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_2666420006&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_2666420006&quot;,&quot;funny&quot;)">#funny</button></div>
+    <div class="btns">
+      <button class="ok" onclick="send('tw_2666420006','approve')">Approve</button>
+      <button class="no" onclick="send('tw_2666420006','reject')">Reject</button>
+    </div>
+  </div>
+</section>
+<section class="card" id="tw_4053550322">
+  <video src="clips/tw_4053550322.preview.mp4" controls preload="none"
+         playsinline poster=""></video>
+  <div class="meta">
+    <div class="who">Adapt
+      <span class="plat">twitch</span></div>
+    <div class="t">Maid’s son tells Adapt about his school</div>
+    <div class="sub">90,255 views &middot; 52s</div>
+    <textarea id="c_tw_4053550322" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">Maid’s son tells Adapt about his school
+
+#adapt #fazeadapt #faze #clips #twitch #kick #streamer</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_4053550322&quot;,&quot;adapt&quot;)">#adapt</button><button class="chip" onclick="addTag(&quot;tw_4053550322&quot;,&quot;fazeadapt&quot;)">#fazeadapt</button><button class="chip" onclick="addTag(&quot;tw_4053550322&quot;,&quot;faze&quot;)">#faze</button><button class="chip" onclick="addTag(&quot;tw_4053550322&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_4053550322&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_4053550322&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_4053550322&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_4053550322&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_4053550322&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_4053550322&quot;,&quot;funny&quot;)">#funny</button></div>
+    <div class="btns">
+      <button class="ok" onclick="send('tw_4053550322','approve')">Approve</button>
+      <button class="no" onclick="send('tw_4053550322','reject')">Reject</button>
     </div>
   </div>
 </section></div>
