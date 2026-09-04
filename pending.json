@@ -288,22 +288,6 @@
   "queued_at": "2026-09-04T08:47:28"
  },
  {
-  "id": "tw_3547038762",
-  "streamer_key": "adapt",
-  "streamer": "Adapt",
-  "platform": "twitch",
-  "title": "W 1ST TRICKSHOT ON A BOAT IN ALASKA",
-  "views": 5444,
-  "duration": 35.0,
-  "created_at": 1787785241,
-  "age_days": 8.6,
-  "source_url": "https://www.twitch.tv/adapt/clip/OptimisticSpikyDragonDendiFace-mW2CM1WOOFIY9gQr",
-  "file": "tw_3547038762.mp4",
-  "preview": "tw_3547038762.preview.mp4",
-  "bytes": 23873086,
-  "queued_at": "2026-09-04T08:54:47"
- },
- {
   "id": "kck_clip_01K83J12RMCFCKXNJAX4JTJVVV",
   "streamer_key": "lospollostv",
   "streamer": "LosPollosTV",
