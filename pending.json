@@ -1,1 +1,18 @@
-[]
+[
+ {
+  "id": "tw_1146640104",
+  "streamer_key": "lacy",
+  "streamer": "Lacy",
+  "platform": "twitch",
+  "title": "Chud Marlon",
+  "views": 12370,
+  "duration": 6.0,
+  "created_at": 1783632213,
+  "age_days": 56.9,
+  "source_url": "https://www.twitch.tv/lacy/clip/NeighborlyCrispyMacaroniDuDudu-VI5mmFNaCtelLTC1",
+  "file": "tw_1146640104.mp4",
+  "preview": "tw_1146640104.preview.mp4",
+  "bytes": 1561746,
+  "queued_at": "2026-09-04T14:50:01"
+ }
+]
