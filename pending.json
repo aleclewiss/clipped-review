@@ -48,6 +48,22 @@
   "queued_at": "2026-09-04T08:18:24"
  },
  {
+  "id": "tw_1780586157",
+  "streamer_key": "adapt",
+  "streamer": "Adapt",
+  "platform": "twitch",
+  "title": "ADA IS DONATING ALL THE SUBS HE GETS fROM MIKE'S SEGMENT TO MIKE AND HIS fAMILY.",
+  "views": 21908,
+  "duration": 26.0,
+  "created_at": 1760209393,
+  "age_days": 327.7,
+  "source_url": "https://www.twitch.tv/adapt/clip/SlipperyAuspiciousKangarooOSkomodo-iAYy4I79jo6WlzxZ",
+  "file": "tw_1780586157.mp4",
+  "preview": "tw_1780586157.preview.mp4",
+  "bytes": 5324309,
+  "queued_at": "2026-09-04T08:20:17"
+ },
+ {
   "id": "tw_3962040825",
   "streamer_key": "lacy",
   "streamer": "Lacy",
