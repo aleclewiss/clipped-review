@@ -142,5 +142,21 @@
   "preview": "tw_784181911.preview.mp4",
   "bytes": 3420088,
   "queued_at": "2026-09-04T14:51:51"
+ },
+ {
+  "id": "tw_663699731",
+  "streamer_key": "adapt",
+  "streamer": "Adapt",
+  "platform": "twitch",
+  "title": "Adapt Gets On Discord With Maya Higa! \ud83d\ude02",
+  "views": 3874,
+  "duration": 29.0,
+  "created_at": 1784933117,
+  "age_days": 41.8,
+  "source_url": "https://www.twitch.tv/adapt/clip/TransparentOddLobsterFeelsBadMan-ipHJnEfgOQNvH2Ge",
+  "file": "tw_663699731.mp4",
+  "preview": "tw_663699731.preview.mp4",
+  "bytes": 2635415,
+  "queued_at": "2026-09-04T14:57:43"
  }
 ]
