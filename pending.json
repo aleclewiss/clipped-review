@@ -48,6 +48,22 @@
   "queued_at": "2026-09-04T08:49:36"
  },
  {
+  "id": "tw_1940444210",
+  "streamer_key": "jynxzi",
+  "streamer": "Jynxzi",
+  "platform": "twitch",
+  "title": "JYNXZI KILLS QUEASY IN FORTNITE PRO-AM",
+  "views": 33756,
+  "duration": 30.0,
+  "created_at": 1783895774,
+  "age_days": 53.6,
+  "source_url": "https://www.twitch.tv/jynxzi/clip/CogentAttractiveMochaPeteZarollTie-gxmr_QWfxMQAl3dA",
+  "file": "tw_1940444210.mp4",
+  "preview": "tw_1940444210.preview.mp4",
+  "bytes": 35441679,
+  "queued_at": "2026-09-04T08:51:57"
+ },
+ {
   "id": "tw_2808494614",
   "streamer_key": "stableronaldo",
   "streamer": "stableronaldo",
