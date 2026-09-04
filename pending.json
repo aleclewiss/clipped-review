@@ -32,6 +32,22 @@
   "queued_at": "2026-09-04T08:26:42"
  },
  {
+  "id": "tw_2496479456",
+  "streamer_key": "adapt",
+  "streamer": "Adapt",
+  "platform": "twitch",
+  "title": "Part 2",
+  "views": 44963,
+  "duration": 22.0,
+  "created_at": 1741744161,
+  "age_days": 541.4,
+  "source_url": "https://www.twitch.tv/adapt/clip/FineTalentedTurnipAMPEnergyCherry-7PYXncYtqrN6gYbL",
+  "file": "tw_2496479456.mp4",
+  "preview": "tw_2496479456.preview.mp4",
+  "bytes": 18360379,
+  "queued_at": "2026-09-04T08:31:02"
+ },
+ {
   "id": "tw_823763550",
   "streamer_key": "jynxzi",
   "streamer": "Jynxzi",
