@@ -1,1 +1,18 @@
-[]
+[
+ {
+  "id": "tw_490213917",
+  "streamer_key": "silky",
+  "streamer": "Silky",
+  "platform": "twitch",
+  "title": "foul???",
+  "views": 9737,
+  "duration": 11.0,
+  "created_at": 1786682489,
+  "age_days": 21.6,
+  "source_url": "https://www.twitch.tv/silky/clip/RefinedIgnorantGarbageKappaClaus-qDEbh7Vo_0_Mfbyg",
+  "file": "tw_490213917.mp4",
+  "preview": "tw_490213917.preview.mp4",
+  "bytes": 10960929,
+  "queued_at": "2026-09-04T15:52:22"
+ }
+]
