@@ -64,6 +64,22 @@
   "queued_at": "2026-09-04T16:13:57"
  },
  {
+  "id": "tw_3557929867",
+  "streamer_key": "lacy",
+  "streamer": "Lacy",
+  "platform": "twitch",
+  "title": "Lacy streams while still high after knee surgery",
+  "views": 12034,
+  "duration": 59.0,
+  "created_at": 1785872172,
+  "age_days": 31.0,
+  "source_url": "https://www.twitch.tv/lacy/clip/ThankfulSavageTrollFutureMan-mnyr5PwNXxZ5dwWL",
+  "file": "tw_3557929867.mp4",
+  "preview": "tw_3557929867.preview.mp4",
+  "bytes": 18276390,
+  "queued_at": "2026-09-04T16:25:34"
+ },
+ {
   "id": "tw_490213917",
   "streamer_key": "silky",
   "streamer": "Silky",
