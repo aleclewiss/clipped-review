@@ -47,6 +47,8 @@
           font:700 15px inherit; }
   .get.alt { flex:0 0 74px; background:transparent; color:var(--cream);
               border:1px solid rgba(242,231,209,.35); }
+  .get.wipe { background:transparent; color:#e5867d;
+               border:1px solid rgba(229,134,125,.55); font-weight:600; }
 </style></head><body>
 <script>
   const REPO = "aleclewiss/clipped-review";
@@ -64,6 +66,20 @@
       + "&body=" + encodeURIComponent("Submit to render " + n + " more clips.");
     window.open(url, "_blank", "noopener");
   }
+  function clearQueue(n) {
+    // Confirm first: this rejects every pending clip, and a rejected clip is
+    // in the used ledger for good — it cannot come back.
+    const total = document.querySelectorAll(".card").length;
+    if (!confirm("Reject all " + total + " clips waiting, and render " + n
+                 + " fresh ones?
+
+Rejected clips never come back.")) return;
+    const url = "https://github.com/" + REPO + "/issues/new"
+      + "?title=" + encodeURIComponent("clear: " + n)
+      + "&body=" + encodeURIComponent("Submit to reject all pending clips and render "
+                                      + n + " fresh ones.");
+    window.open(url, "_blank", "noopener");
+  }
   function send(id, verdict) {
     const ta = document.getElementById("c_" + id);
     // The caption rides in the issue BODY. Nothing else on this page can talk
@@ -78,10 +94,13 @@
 </script>
 <header>
   <h1>Clipped House &mdash; review</h1>
-  <div class="count">42 waiting &middot; updated Sep 04 08:06</div>
+  <div class="count">43 waiting &middot; updated Sep 04 08:06</div>
   <div class="more">
     <button class="get" onclick="getMore(20)">Get 20 more clips</button>
     <button class="get alt" onclick="getMore(40)">40</button>
+  </div>
+  <div class="more">
+    <button class="get wipe" onclick="clearQueue(20)">Clear queue &amp; get 20 fresh</button>
   </div>
 </header>
 <div class="grid">
@@ -566,6 +585,25 @@
     <div class="btns">
       <button class="ok" onclick="send('tw_3282304760','approve')">Approve</button>
       <button class="no" onclick="send('tw_3282304760','reject')">Reject</button>
+    </div>
+  </div>
+</section>
+<section class="card" id="tw_2897511669">
+  <video src="clips/tw_2897511669.preview.mp4" controls preload="none"
+         playsinline poster=""></video>
+  <div class="meta">
+    <div class="who">stableronaldo
+      <span class="plat">twitch</span></div>
+    <div class="t">rage cracks ron</div>
+    <div class="sub">40,672 views &middot; 11s</div>
+    <textarea id="c_tw_2897511669" class="cap" rows="4"
+      placeholder="Caption for TikTok / YouTube...">rage cracks ron
+
+#stableronaldo #nopixel #gta #clips #twitch #kick #streamer</textarea>
+    <div class="chips"><button class="chip" onclick="addTag(&quot;tw_2897511669&quot;,&quot;stableronaldo&quot;)">#stableronaldo</button><button class="chip" onclick="addTag(&quot;tw_2897511669&quot;,&quot;nopixel&quot;)">#nopixel</button><button class="chip" onclick="addTag(&quot;tw_2897511669&quot;,&quot;gta&quot;)">#gta</button><button class="chip" onclick="addTag(&quot;tw_2897511669&quot;,&quot;clips&quot;)">#clips</button><button class="chip" onclick="addTag(&quot;tw_2897511669&quot;,&quot;twitch&quot;)">#twitch</button><button class="chip" onclick="addTag(&quot;tw_2897511669&quot;,&quot;kick&quot;)">#kick</button><button class="chip" onclick="addTag(&quot;tw_2897511669&quot;,&quot;streamer&quot;)">#streamer</button><button class="chip" onclick="addTag(&quot;tw_2897511669&quot;,&quot;fyp&quot;)">#fyp</button><button class="chip" onclick="addTag(&quot;tw_2897511669&quot;,&quot;viral&quot;)">#viral</button><button class="chip" onclick="addTag(&quot;tw_2897511669&quot;,&quot;funny&quot;)">#funny</button></div>
+    <div class="btns">
+      <button class="ok" onclick="send('tw_2897511669','approve')">Approve</button>
+      <button class="no" onclick="send('tw_2897511669','reject')">Reject</button>
     </div>
   </div>
 </section>
