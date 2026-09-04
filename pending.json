@@ -1,1 +1,18 @@
-[]
+[
+ {
+  "id": "kck_clip_01JDP309VGHNVZSWNDJC6YQVJA",
+  "streamer_key": "lospollostv",
+  "streamer": "LosPollosTV",
+  "platform": "kick",
+  "title": "Los gets a Warning",
+  "views": 4426,
+  "duration": 29.0,
+  "created_at": "2024-11-27T05:56:49.175707Z",
+  "age_days": 646.3,
+  "source_url": "https://clips.kick.com/clips/b1/clip_01JDP309VGHNVZSWNDJC6YQVJA/playlist.m3u8",
+  "file": "kck_clip_01JDP309VGHNVZSWNDJC6YQVJA.mp4",
+  "preview": "kck_clip_01JDP309VGHNVZSWNDJC6YQVJA.preview.mp4",
+  "bytes": 5349021,
+  "queued_at": "2026-09-04T09:50:08"
+ }
+]
