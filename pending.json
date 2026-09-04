@@ -176,6 +176,22 @@
   "queued_at": "2026-09-04T16:15:05"
  },
  {
+  "id": "tw_2315167593",
+  "streamer_key": "silky",
+  "streamer": "Silky",
+  "platform": "twitch",
+  "title": "FAIRS",
+  "views": 9517,
+  "duration": 17.0,
+  "created_at": 1786084702,
+  "age_days": 28.6,
+  "source_url": "https://www.twitch.tv/silky/clip/FrailMoralLorisNotATK-rCFtYwXxdlPs9twr",
+  "file": "tw_2315167593.mp4",
+  "preview": "tw_2315167593.preview.mp4",
+  "bytes": 12358707,
+  "queued_at": "2026-09-04T16:34:01"
+ },
+ {
   "id": "tw_305270966",
   "streamer_key": "adapt",
   "streamer": "Adapt",
