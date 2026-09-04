@@ -70,10 +70,9 @@
     // Confirm first: this rejects every pending clip, and a rejected clip is
     // in the used ledger for good — it cannot come back.
     const total = document.querySelectorAll(".card").length;
-    if (!confirm("Reject all " + total + " clips waiting, and render " + n
-                 + " fresh ones?
-
-Rejected clips never come back.")) return;
+    const msg = "Reject all " + total + " clips waiting, and render " + n
+              + " fresh ones? Rejected clips never come back.";
+    if (!confirm(msg)) return;
     const url = "https://github.com/" + REPO + "/issues/new"
       + "?title=" + encodeURIComponent("clear: " + n)
       + "&body=" + encodeURIComponent("Submit to reject all pending clips and render "
@@ -94,7 +93,7 @@ Rejected clips never come back.")) return;
 </script>
 <header>
   <h1>Clipped House &mdash; review</h1>
-  <div class="count">45 waiting &middot; updated Sep 04 08:12</div>
+  <div class="count">45 waiting &middot; updated Sep 04 08:13</div>
   <div class="more">
     <button class="get" onclick="getMore(20)">Get 20 more clips</button>
     <button class="get alt" onclick="getMore(40)">40</button>
