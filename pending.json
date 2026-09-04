@@ -142,5 +142,21 @@
   "preview": "tw_305270966.preview.mp4",
   "bytes": 14034176,
   "queued_at": "2026-09-04T16:18:38"
+ },
+ {
+  "id": "tw_3017369483",
+  "streamer_key": "adapt",
+  "streamer": "Adapt",
+  "platform": "twitch",
+  "title": "Noway Adapt spotted a gas leak",
+  "views": 4744,
+  "duration": 7.0,
+  "created_at": 1787611027,
+  "age_days": 10.9,
+  "source_url": "https://www.twitch.tv/adapt/clip/BoldSpineyOcelotRlyTho-TaJqGXDFOWKzPd-4",
+  "file": "tw_3017369483.mp4",
+  "preview": "tw_3017369483.preview.mp4",
+  "bytes": 8174678,
+  "queued_at": "2026-09-04T16:29:45"
  }
 ]
