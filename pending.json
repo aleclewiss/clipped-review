@@ -208,6 +208,22 @@
   "queued_at": "2026-09-04T16:26:58"
  },
  {
+  "id": "tw_3090079188",
+  "streamer_key": "lacy",
+  "streamer": "Lacy",
+  "platform": "twitch",
+  "title": "wth sue for that",
+  "views": 9811,
+  "duration": 59.0,
+  "created_at": 1784440430,
+  "age_days": 47.6,
+  "source_url": "https://www.twitch.tv/lacy/clip/PlainSourVanillaPupper-kMoyNRY2N2nw1o3a",
+  "file": "tw_3090079188.mp4",
+  "preview": "tw_3090079188.preview.mp4",
+  "bytes": 26153442,
+  "queued_at": "2026-09-04T16:42:06"
+ },
+ {
   "id": "tw_490213917",
   "streamer_key": "silky",
   "streamer": "Silky",
