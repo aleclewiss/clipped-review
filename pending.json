@@ -256,6 +256,22 @@
   "queued_at": "2026-09-04T16:34:01"
  },
  {
+  "id": "tw_3438133543",
+  "streamer_key": "silky",
+  "streamer": "Silky",
+  "platform": "twitch",
+  "title": "Rakai Ankles Done",
+  "views": 9416,
+  "duration": 21.0,
+  "created_at": 1783823792,
+  "age_days": 54.8,
+  "source_url": "https://www.twitch.tv/silky/clip/KitschyLachrymoseCamelKappa-8GJv3320K5j4ZpMO",
+  "file": "tw_3438133543.mp4",
+  "preview": "tw_3438133543.preview.mp4",
+  "bytes": 27720783,
+  "queued_at": "2026-09-04T16:43:45"
+ },
+ {
   "id": "tw_305270966",
   "streamer_key": "adapt",
   "streamer": "Adapt",
