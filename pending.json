@@ -48,22 +48,6 @@
   "queued_at": "2026-09-06T18:20:31"
  },
  {
-  "id": "tw_435476983",
-  "streamer_key": "jasontheween",
-  "streamer": "JasonTheWeen",
-  "platform": "twitch",
-  "title": "jason gets degloved",
-  "views": 17435,
-  "duration": 27.0,
-  "created_at": 1785381031,
-  "age_days": 38.8,
-  "source_url": "https://www.twitch.tv/jasontheween/clip/CrepuscularFancyCourgetteHassanChop-gszfPI8VGd2O0_Li",
-  "file": "tw_435476983.mp4",
-  "preview": "tw_435476983.preview.mp4",
-  "bytes": 36472170,
-  "queued_at": "2026-09-06T18:16:06"
- },
- {
   "id": "tw_375293461",
   "streamer_key": "jasontheween",
   "streamer": "JasonTheWeen",
@@ -206,6 +190,22 @@
   "preview": "tw_1722629954.preview.mp4",
   "bytes": 18746564,
   "queued_at": "2026-09-06T18:18:34"
+ },
+ {
+  "id": "tw_1478471282",
+  "streamer_key": "silky",
+  "streamer": "Silky",
+  "platform": "twitch",
+  "title": "\"The whole lobby\"\ud83d\ude2d",
+  "views": 7821,
+  "duration": 15.0,
+  "created_at": 1784969006,
+  "age_days": 43.6,
+  "source_url": "https://www.twitch.tv/silky/clip/CloudyHedonisticWitchTBTacoLeft-9uO9SWLJKXD9xH9x",
+  "file": "tw_1478471282.mp4",
+  "preview": "tw_1478471282.preview.mp4",
+  "bytes": 14881445,
+  "queued_at": "2026-09-06T18:31:42"
  },
  {
   "id": "tw_3359898459",
