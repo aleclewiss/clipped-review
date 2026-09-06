@@ -110,5 +110,21 @@
   "preview": "tw_435033644.preview.mp4",
   "bytes": 24633834,
   "queued_at": "2026-09-06T18:13:37"
+ },
+ {
+  "id": "tw_3319048180",
+  "streamer_key": "adapt",
+  "streamer": "Adapt",
+  "platform": "twitch",
+  "title": "ADAPT & MAYA - CLOSE CALL",
+  "views": 2385,
+  "duration": 59.0,
+  "created_at": 1787683413,
+  "age_days": 12.2,
+  "source_url": "https://www.twitch.tv/adapt/clip/CourteousTenderClipsdadOhMyDog-MmkFe0uN_okloi_z",
+  "file": "tw_3319048180.mp4",
+  "preview": "tw_3319048180.preview.mp4",
+  "bytes": 23343247,
+  "queued_at": "2026-09-06T18:19:38"
  }
 ]
