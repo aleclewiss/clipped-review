@@ -64,6 +64,22 @@
   "queued_at": "2026-09-06T18:16:51"
  },
  {
+  "id": "tw_2881738127",
+  "streamer_key": "silky",
+  "streamer": "Silky",
+  "platform": "twitch",
+  "title": "Guapo",
+  "views": 8184,
+  "duration": 17.0,
+  "created_at": 1786930557,
+  "age_days": 20.9,
+  "source_url": "https://www.twitch.tv/silky/clip/CarelessInexpensiveCobraEleGiggle-m-psvc_spBRfD9AY",
+  "file": "tw_2881738127.mp4",
+  "preview": "tw_2881738127.preview.mp4",
+  "bytes": 26017928,
+  "queued_at": "2026-09-06T18:17:42"
+ },
+ {
   "id": "tw_435033644",
   "streamer_key": "adapt",
   "streamer": "Adapt",
