@@ -112,22 +112,6 @@
   "queued_at": "2026-09-04T16:28:28"
  },
  {
-  "id": "tw_584977085",
-  "streamer_key": "lacy",
-  "streamer": "Lacy",
-  "platform": "twitch",
-  "title": "LACY FALL IN WHEELCHAIR LOL",
-  "views": 13040,
-  "duration": 25.0,
-  "created_at": 1784169082,
-  "age_days": 50.7,
-  "source_url": "https://www.twitch.tv/lacy/clip/HappySweetPuddingOSfrog-nSc34qyhWKVdqUB-",
-  "file": "tw_584977085.mp4",
-  "preview": "tw_584977085.preview.mp4",
-  "bytes": 33210471,
-  "queued_at": "2026-09-04T16:13:57"
- },
- {
   "id": "tw_530334581",
   "streamer_key": "lacy",
   "streamer": "Lacy",
@@ -142,22 +126,6 @@
   "preview": "tw_530334581.preview.mp4",
   "bytes": 26439162,
   "queued_at": "2026-09-04T16:33:24"
- },
- {
-  "id": "tw_3557929867",
-  "streamer_key": "lacy",
-  "streamer": "Lacy",
-  "platform": "twitch",
-  "title": "Lacy streams while still high after knee surgery",
-  "views": 12034,
-  "duration": 59.0,
-  "created_at": 1785872172,
-  "age_days": 31.0,
-  "source_url": "https://www.twitch.tv/lacy/clip/ThankfulSavageTrollFutureMan-mnyr5PwNXxZ5dwWL",
-  "file": "tw_3557929867.mp4",
-  "preview": "tw_3557929867.preview.mp4",
-  "bytes": 18276390,
-  "queued_at": "2026-09-04T16:25:34"
  },
  {
   "id": "tw_1097246523",
