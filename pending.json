@@ -254,5 +254,21 @@
   "preview": "tw_3319048180.preview.mp4",
   "bytes": 23343247,
   "queued_at": "2026-09-06T18:19:38"
+ },
+ {
+  "id": "tw_3179666383",
+  "streamer_key": "adapt",
+  "streamer": "Adapt",
+  "platform": "twitch",
+  "title": "FIRST SHOT BACK FROM ADAPT",
+  "views": 2247,
+  "duration": 36.0,
+  "created_at": 1786852906,
+  "age_days": 21.8,
+  "source_url": "https://www.twitch.tv/adapt/clip/ShortAttractiveMooseEleGiggle-Juc_-5UKJVx_gAc_",
+  "file": "tw_3179666383.mp4",
+  "preview": "tw_3179666383.preview.mp4",
+  "bytes": 16693360,
+  "queued_at": "2026-09-06T18:33:24"
  }
 ]
