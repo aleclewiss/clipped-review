@@ -64,6 +64,22 @@
   "queued_at": "2026-09-06T18:21:17"
  },
  {
+  "id": "tw_483810299",
+  "streamer_key": "lacy",
+  "streamer": "Lacy",
+  "platform": "twitch",
+  "title": "lacy actually says the word",
+  "views": 9947,
+  "duration": 13.0,
+  "created_at": 1782530911,
+  "age_days": 71.8,
+  "source_url": "https://www.twitch.tv/lacy/clip/MushyLivelyWalletLitty-TjLuqWQ9KALHKjvb",
+  "file": "tw_483810299.mp4",
+  "preview": "tw_483810299.preview.mp4",
+  "bytes": 14089668,
+  "queued_at": "2026-09-06T18:22:19"
+ },
+ {
   "id": "tw_4135990782",
   "streamer_key": "marlon",
   "streamer": "Marlon",
